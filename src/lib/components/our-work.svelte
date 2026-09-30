@@ -1,30 +1,30 @@
 <script lang="ts">
-import { imageSources } from "$lib/image-source";
+import { PUBLIC_R2_URL } from "$env/static/public";
 
 // Update each href here when the gallery supports category query parameters.
 const categories = [
 	{
 		id: "built-ins-cabinetry",
 		label: "Built-ins & Cabinetry",
-		image: imageSources["Built-ins and Cabinetry/IMG_0990.JPG"],
+		image: `${PUBLIC_R2_URL}/photos/built-ins-and-cabinetry/IMG_0990.JPG`,
 		href: "/gallery",
 	},
 	{
 		id: "staircases-railings",
 		label: "Staircases & Railings",
-		image: imageSources["Staircases and Railings/IMG_0792.JPG"],
+		image: `${PUBLIC_R2_URL}/photos/staircases-and-railings/IMG_0792.JPG`,
 		href: "/gallery",
 	},
 	{
 		id: "walls-trim",
 		label: "Walls & Trim",
-		image: imageSources["Walls and Trim/IMG_1461.JPG"],
+		image: `${PUBLIC_R2_URL}/photos/walls-and-trim/IMG_1461.JPG`,
 		href: "/gallery",
 	},
 	{
 		id: "mudrooms-entryways",
 		label: "Mudrooms & Entryways",
-		image: imageSources["Mudrooms and Entryway Benches/IMG_0988.JPG"],
+		image: `${PUBLIC_R2_URL}/photos/mudrooms-and-benches/IMG_0988.JPG`,
 		href: "/gallery",
 	},
 ];
@@ -48,11 +48,9 @@ const categories = [
         <li class="flex min-w-0 flex-col items-start">
           <div class="aspect-square w-full overflow-hidden bg-neutral/10">
             <img
-              src={category.image.src}
-              alt={category.image.alt}
+              src={category.image}
+              alt={category.label}
               class="size-full object-cover"
-              style:object-position={category.image.objectPosition}
-              style:transform={`rotate(${category.image.rotation}deg)`}
               width="600"
               height="600"
               loading="lazy"

@@ -68,7 +68,7 @@ const contactOptions = [
 
     <div class="mt-10 grid gap-5 md:grid-cols-3 lg:mt-14 lg:gap-6">
       {#each contactOptions as option (option.id)}
-        <article class={["card card-border bg-base-100", option.primary && "border-primary"]}>
+        <article class={["card card-border border-2 bg-base-100", option.primary && "border-primary"]}>
           <div class="card-body gap-5 p-6 lg:p-8">
             <Icon icon={option.icon} class="size-8 text-secondary" aria-hidden="true" />
             <svelte:element
@@ -83,7 +83,7 @@ const contactOptions = [
             <div class="card-actions mt-3 w-full">
                 <a
                   href={option.href}
-                  class={["btn btn-block min-h-12 motion-reduce:transition-none", option.primary ? "btn-primary" : "btn-outline"]}
+                  class={["btn btn-block btn-lg min-h-12 motion-reduce:transition-none", option.primary ? "btn-primary" : "btn-outline"]}
                 >
                   {option.label}
                   <Icon icon="lucide:arrow-up-right" class="size-5" aria-hidden="true" />

@@ -56,18 +56,18 @@ function closeMenu() {
     <!-- End Button -->
     <div class="flex items-center gap-1 lg:gap-4">
       <a
-        class="btn btn-outline  btn-lg hidden lg:flex"
-        href={businessInfo.smsHref}
+        class="btn btn-outline btn-lg hidden lg:flex"
+        href={`mailto:${businessInfo.email}`}
       >
-				<Icon icon="boxicons:message-bubble" />
-				Text Us
+				<Icon icon="boxicons:envelope" class="size-5" />
+				Email Us
       </a>
 
       <a class="btn btn-primary btn-lg hidden lg:flex"
         href={businessInfo.phoneHref}
       >
 
-        <Icon icon="boxicons:phone-filled" />
+        <Icon icon="boxicons:phone-filled" class="size-5" />
 				Call Now
 			</a>
 

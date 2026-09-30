@@ -1,10 +1,10 @@
 <script lang="ts">
 import Icon from "@iconify/svelte";
-import { imageSources } from "$lib/image-source";
+import { PUBLIC_R2_URL } from "$env/static/public";
 import { businessInfo } from "$lib/info";
 
-const image = imageSources["Fireplaces/IMG_0930.JPG"];
-</script>
+const image = `${PUBLIC_R2_URL}/photos/fireplaces/IMG_0930.JPG`;
+</script>	
 
 <section
   id="about"
@@ -14,11 +14,9 @@ const image = imageSources["Fireplaces/IMG_0930.JPG"];
   <div class="mx-auto grid w-full max-w-7xl items-center gap-10 px-6 sm:px-10 md:grid-cols-2 lg:gap-20 lg:px-16">
     <div class="aspect-square w-full overflow-hidden border-4 border-primary bg-neutral-content/10 rounded">
       <img
-        src={image.src}
-        alt={image.alt}
+        src={image}
+				alt="fireplace"
         class="size-full object-cover"
-        style:object-position={image.objectPosition}
-        style:transform={`rotate(${image.rotation}deg)`}
         width="800"
         height="800"
         loading="lazy"
@@ -53,12 +51,11 @@ const image = imageSources["Fireplaces/IMG_0930.JPG"];
         </p>
       </div>
 			<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-<a
+			<a
         href="/contact"
         class="btn btn-primary btn-lg "
       >
         Let's Talk
-
         <Icon icon="material-symbols:arrow-outward" class="size-6" aria-hidden="true" />
       </a>
       <a

@@ -36,7 +36,7 @@ const image = `${PUBLIC_R2_URL}/photos/fireplaces/IMG_0930.JPG`;
       >
         Thoughtful details.<br />Built around you.
       </h2>
-      <div class="mt-6 space-y-5 text-sm leading-relaxed font-light text-neutral-content/80 sm:text-base">
+      <div class="mt-6 space-y-5 leading-relaxed font-light text-neutral-content/80 text-base">
         <p>
           Your home should feel like your own. At {businessInfo.name}, we create
           custom carpentry that brings character and everyday purpose to the spaces

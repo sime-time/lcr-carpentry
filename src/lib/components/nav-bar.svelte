@@ -90,10 +90,12 @@ function closeMenu() {
         class="btn btn-ghost border-none text-base-content hover:text-accent hover:bg-transparent lg:hidden"
         onclick={toggleMenu}
       >
-        <Icon
+				<span class="size-7">
+				<Icon
           icon={isMobileMenuOpen ? "lucide:x" : "lucide:menu"}
           class="h-7 w-auto"
         />
+				</span>
       </button>
     </div>
   </section>

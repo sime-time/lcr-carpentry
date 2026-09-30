@@ -1,0 +1,58 @@
+@import '@fontsource-variable/roboto-slab';
+@import '@fontsource/fraunces/latin-400.css';
+@import '@fontsource/fraunces/latin-400-italic.css';
+@import 'tailwindcss';
+
+@plugin 'daisyui' {
+  themes: false;
+}
+
+/* Charcoal surfaces, orange and gold details, and warm-white logo lettering. */
+@plugin 'daisyui/theme' {
+  name: 'lcr-carpentry';
+  default: true;
+  prefersdark: true;
+  color-scheme: dark;
+  --color-base-100: #535353;
+  --color-base-200: #474747;
+  --color-base-300: #3b3b3b;
+  --color-base-content: #fffaf3;
+  --color-primary: #ff7518;
+  --color-primary-content: #28241f;
+  --color-secondary: #f8cc62;
+  --color-secondary-content: #28241f;
+  --color-accent: #ffa238;
+  --color-accent-content: #28241f;
+  --color-neutral: #303030;
+  --color-neutral-content: #fffaf3;
+  --color-info: #91c5df;
+  --color-info-content: #202d35;
+  --color-success: #a3c89b;
+  --color-success-content: #243022;
+  --color-warning: #f8cc62;
+  --color-warning-content: #28241f;
+  --color-error: #ef9b8e;
+  --color-error-content: #3b211e;
+  --radius-selector: 0.125rem;
+  --radius-field: 0.125rem;
+  --radius-box: 0.125rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+@theme {
+  --font-sans: 'Roboto Slab Variable', Georgia, serif;
+  --font-serif: 'Fraunces', Georgia, serif;
+  --font-mono: 'Roboto Slab Variable', Georgia, serif;
+  --font-display: 'Fraunces', Georgia, serif;
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 400;
+  }
+}

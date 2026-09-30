@@ -12,8 +12,7 @@ const image = `${PUBLIC_R2_URL}/photos/fireplaces/IMG_0930.JPG`;
   aria-labelledby="about-title"
 >
   <div class="mx-auto grid w-full max-w-7xl items-center gap-10 px-6 sm:px-10 md:grid-cols-2 lg:gap-20 lg:px-16">
-		<!-- Image: second on mobile, first on desktop -->
-    <div class="order-2 md:order-1 aspect-square w-full overflow-hidden border-4 border-primary bg-neutral-content/10 rounded">
+    <div class="hidden sm:block aspect-square w-full overflow-hidden border-4 border-primary bg-neutral-content/10 rounded">
       <img
         src={image}
 				alt="fireplace"
@@ -25,8 +24,7 @@ const image = `${PUBLIC_R2_URL}/photos/fireplaces/IMG_0930.JPG`;
       />
     </div>
 
-		<!-- Text: first on mobile, second on desktop -->
-    <div class="order-1 md:order-2">
+		<div>
       <p class="mb-4 text-xs tracking-[0.2em] text-secondary uppercase">
         About {businessInfo.name}
       </p>

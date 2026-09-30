@@ -74,7 +74,7 @@ function selectImage(index: number) {
 				id="hero-title"
 				class="font-display text-5xl leading-[1.05] font-normal tracking-tight sm:text-6xl lg:text-7xl"
 			>
-				Woodwork built to
+				Woodwork crafted to
 				<span class="text-primary">fit your home.</span>
 			</h1>
 

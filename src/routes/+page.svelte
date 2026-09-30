@@ -9,7 +9,7 @@ import OurWork from "$lib/components/our-work.svelte";
 
 <NavBar />
 <Hero />
-<OurWork />
 <About />
+<OurWork />
 <Contact />
 <Footer />

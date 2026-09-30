@@ -1,25 +1,6 @@
 <script lang="ts">
 import Icon from "@iconify/svelte";
-import { businessInfo } from "$lib/info";
-
-const navItems = [
-	{
-		label: "Home",
-		href: "/",
-	},
-	{
-		label: "About",
-		href: "/#about",
-	},
-	{
-		label: "Our Work",
-		href: "/gallery",
-	},
-	{
-		label: "Contact",
-		href: "/contact",
-	},
-];
+import { businessInfo, navItems } from "$lib/info";
 
 let scrollY = $state(0);
 const isScrolled = $derived(scrollY > 8);

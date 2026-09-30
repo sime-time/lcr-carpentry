@@ -47,10 +47,6 @@ const image = `${PUBLIC_R2_URL}/photos/fireplaces/IMG_0930.JPG`;
           welcoming entryways, our work is shaped around your home and the details
           that matter to you.
         </p>
-        <p>
-          Serving {businessInfo.serviceAreas.slice(0, -1).join(", ")}, and
-          {businessInfo.serviceAreas.at(-1)}, {businessInfo.state}.
-        </p>
       </div>
 			<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
 			<a

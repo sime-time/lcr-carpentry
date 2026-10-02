@@ -45,7 +45,7 @@
           "absolute object-cover transition-opacity duration-1400 ease-in-out motion-reduce:transition-none",
           image.rotation === 0
             ? "inset-0 size-full"
-            : "top-1/2 left-1/2 h-[100vw] w-[max(40rem,100svh)]",
+            : "top-1/2 left-1/2 h-[100vw] w-[max(40rem,100svh)] scale-[2] sm:scale-[1.35]",
           index === activeIndex ? "opacity-100" : "opacity-0",
         ]}
         style:transform={image.rotation === 0

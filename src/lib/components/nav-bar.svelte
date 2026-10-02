@@ -1,19 +1,19 @@
 <script lang="ts">
-import Icon from "@iconify/svelte";
-import { businessInfo, navItems } from "$lib/info";
+  import Icon from "@iconify/svelte";
+  import { businessInfo, navItems } from "$lib/info";
 
-let scrollY = $state(0);
-const isScrolled = $derived(scrollY > 8);
+  let scrollY = $state(0);
+  const isScrolled = $derived(scrollY > 8);
 
-let isMobileMenuOpen = $state(false);
+  let isMobileMenuOpen = $state(false);
 
-function toggleMenu() {
-	isMobileMenuOpen = !isMobileMenuOpen;
-}
+  function toggleMenu() {
+    isMobileMenuOpen = !isMobileMenuOpen;
+  }
 
-function closeMenu() {
-	isMobileMenuOpen = false;
-}
+  function closeMenu() {
+    isMobileMenuOpen = false;
+  }
 </script>
 
 <svelte:window bind:scrollY />
@@ -29,15 +29,15 @@ function closeMenu() {
   >
     <div>
       <!-- Logo -->
-			<a href="/#hero" class="inline-flex items-center">
-				<img
-					src="/lcr-logo-transparent.png"
-					alt="LCR Carpentry"
-					class="block h-14 w-auto"
-					width="1280"
-					height="502"
-				>
-			</a>
+      <a href="/#hero" class="inline-flex items-center">
+        <img
+          src="/lcr-logo-transparent.png"
+          alt="LCR Carpentry"
+          class="block h-14 w-auto"
+          width="1280"
+          height="502"
+        >
+      </a>
     </div>
 
     <!-- Desktop Nav -->
@@ -59,17 +59,17 @@ function closeMenu() {
         class="btn btn-outline btn-lg hidden lg:flex"
         href={`mailto:${businessInfo.email}`}
       >
-				<Icon icon="boxicons:envelope" class="size-5" />
-				Email Us
+        <Icon icon="boxicons:envelope" class="size-5" />
+        Email Us
       </a>
 
-      <a class="btn btn-primary btn-lg hidden lg:flex"
+      <a
+        class="btn btn-primary btn-lg hidden lg:flex"
         href={businessInfo.phoneHref}
       >
-
         <Icon icon="boxicons:phone-filled" class="size-5" />
-				Call Now
-			</a>
+        Call Now
+      </a>
 
       <!-- Mobile Call Button -->
       <a
@@ -86,16 +86,18 @@ function closeMenu() {
         type="button"
         aria-controls="mobile-navigation"
         aria-expanded={isMobileMenuOpen}
-        aria-label={isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+        aria-label={isMobileMenuOpen
+          ? "Close navigation menu"
+          : "Open navigation menu"}
         class="btn btn-ghost border-none text-base-content hover:text-accent hover:bg-transparent lg:hidden"
         onclick={toggleMenu}
       >
-				<span class="size-7">
-				<Icon
-          icon={isMobileMenuOpen ? "lucide:x" : "lucide:menu"}
-          class="h-7 w-auto"
-        />
-				</span>
+        <span class="size-7">
+          <Icon
+            icon={isMobileMenuOpen ? "lucide:x" : "lucide:menu"}
+            class="h-7 w-auto"
+          />
+        </span>
       </button>
     </div>
   </section>
@@ -121,7 +123,7 @@ function closeMenu() {
         onclick={closeMenu}
       >
         <Icon icon="boxicons:message-bubble" />
-				Text Us
+        Text Us
       </a>
 
       <a

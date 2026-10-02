@@ -1,15 +1,15 @@
-@import '@fontsource-variable/roboto-slab';
-@import '@fontsource/fraunces/latin-400.css';
-@import '@fontsource/fraunces/latin-400-italic.css';
-@import 'tailwindcss';
+@import "@fontsource-variable/roboto-slab";
+@import "@fontsource/fraunces/latin-400.css";
+@import "@fontsource/fraunces/latin-400-italic.css";
+@import "tailwindcss";
 
-@plugin 'daisyui' {
+@plugin "daisyui" {
   themes: false;
 }
 
 /* Charcoal surfaces, orange and gold details, and warm-white logo lettering. */
-@plugin 'daisyui/theme' {
-  name: 'lcr-carpentry';
+@plugin "daisyui/theme" {
+  name: "lcr-carpentry";
   default: true;
   prefersdark: true;
   color-scheme: dark;
@@ -44,14 +44,19 @@
 }
 
 @theme {
-  --font-sans: 'Roboto Slab Variable', Georgia, serif;
-  --font-serif: 'Fraunces', Georgia, serif;
-  --font-mono: 'Roboto Slab Variable', Georgia, serif;
-  --font-display: 'Fraunces', Georgia, serif;
+  --font-sans: "Roboto Slab Variable", Georgia, serif;
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-mono: "Roboto Slab Variable", Georgia, serif;
+  --font-display: "Fraunces", Georgia, serif;
 }
 
 @layer base {
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-display);
     font-weight: 400;
   }

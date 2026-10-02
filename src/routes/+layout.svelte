@@ -1,23 +1,25 @@
 <script lang="ts">
-import "../app.css";
-import favicon from "$lib/assets/favicon.svg";
-import { businessInfo } from "$lib/info";
+  import "../app.css";
+  import favicon from "$lib/assets/favicon.svg";
+  import Footer from "$lib/components/footer.svelte";
+  import NavBar from "$lib/components/nav-bar.svelte";
+  import { businessInfo } from "$lib/info";
 
-let { children } = $props();
+  let { children } = $props();
 
-const meta = {
-	title: `${businessInfo.name} | Custom Carpentry in Carmel, Fishers & Westfield`,
-	description:
-		"Custom built-ins, staircases, and interior woodwork by LCR Carpentry. Serving Carmel, Fishers, and Westfield, Indiana. Call to talk about your project.",
-	url: "https://lcrcarpentry.com/",
-};
+  const meta = {
+    title: `${businessInfo.name} | Custom Carpentry in Carmel, Fishers & Westfield`,
+    description:
+      "Custom built-ins, staircases, and interior woodwork by LCR Carpentry. Serving Carmel, Fishers, and Westfield, Indiana. Call to talk about your project.",
+    url: "https://lcrcarpentry.com/",
+  };
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
+  <link rel="icon" href={favicon}>
   <title>{meta.title}</title>
-  <meta name="description" content={meta.description} />
-  <meta name="theme-color" content="#303030" />
+  <meta name="description" content={meta.description}>
+  <meta name="theme-color" content="#303030">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content={meta.url}>
@@ -33,4 +35,6 @@ const meta = {
   <meta name="twitter:image" content="https://woloroofing.com/og-image.jpg">
 </svelte:head>
 
+<NavBar />
 {@render children()}
+<Footer />

@@ -1,33 +1,33 @@
 <script lang="ts">
-import { PUBLIC_R2_URL } from "$env/static/public";
+  import { PUBLIC_R2_URL } from "$env/static/public";
 
-// Update each href here when the gallery supports category query parameters.
-const categories = [
-	{
-		id: "built-ins-cabinetry",
-		label: "Built-ins & Cabinetry",
-		image: `${PUBLIC_R2_URL}/photos/built-ins-and-cabinetry/IMG_0990.JPG`,
-		href: "/gallery",
-	},
-	{
-		id: "staircases-railings",
-		label: "Staircases & Railings",
-		image: `${PUBLIC_R2_URL}/photos/staircases-and-railings/IMG_0792.JPG`,
-		href: "/gallery",
-	},
-	{
-		id: "walls-trim",
-		label: "Walls & Trim",
-		image: `${PUBLIC_R2_URL}/photos/walls-and-trim/IMG_1461.JPG`,
-		href: "/gallery",
-	},
-	{
-		id: "mudrooms-entryways",
-		label: "Mudrooms & Entryways",
-		image: `${PUBLIC_R2_URL}/photos/mudrooms-and-benches/IMG_0988.JPG`,
-		href: "/gallery",
-	},
-];
+  // Update each href here when the gallery supports category query parameters.
+  const categories = [
+    {
+      id: "built-ins-cabinetry",
+      label: "Built-ins & Cabinetry",
+      image: `${PUBLIC_R2_URL}/photos/built-ins-and-cabinetry/IMG_0990.JPG`,
+      href: "/gallery",
+    },
+    {
+      id: "staircases-railings",
+      label: "Staircases & Railings",
+      image: `${PUBLIC_R2_URL}/photos/staircases-and-railings/IMG_0792.JPG`,
+      href: "/gallery",
+    },
+    {
+      id: "walls-trim",
+      label: "Walls & Trim",
+      image: `${PUBLIC_R2_URL}/photos/walls-and-trim/IMG_1461.JPG`,
+      href: "/gallery",
+    },
+    {
+      id: "mudrooms-entryways",
+      label: "Mudrooms & Entryways",
+      image: `${PUBLIC_R2_URL}/photos/mudrooms-and-benches/IMG_0988.JPG`,
+      href: "/gallery",
+    },
+  ];
 </script>
 
 <section
@@ -43,7 +43,9 @@ const categories = [
       Our Work
     </h2>
 
-    <ul class="grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-14 lg:grid-cols-4">
+    <ul
+      class="grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-14 lg:grid-cols-4"
+    >
       {#each categories as category (category.id)}
         <li class="flex min-w-0 flex-col items-start">
           <div class="aspect-square w-full overflow-hidden bg-neutral/10">
@@ -55,10 +57,12 @@ const categories = [
               height="600"
               loading="lazy"
               decoding="async"
-            />
+            >
           </div>
 
-          <h3 class="mt-6 mb-6 font-sans text-sm leading-6 font-normal tracking-[0.16em] uppercase sm:min-h-12 lg:mt-8 lg:mb-8">
+          <h3
+            class="mt-6 mb-6 font-sans text-sm leading-6 font-normal tracking-[0.16em] uppercase sm:min-h-12 lg:mt-8 lg:mb-8"
+          >
             {category.label}
           </h3>
 

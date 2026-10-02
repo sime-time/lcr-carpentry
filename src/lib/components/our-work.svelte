@@ -20,13 +20,23 @@
     >
       {#each ourWorkImages as image (image.id)}
         <li class="flex min-w-0 flex-col items-start">
-          <div class="aspect-square w-full overflow-hidden bg-neutral/10">
+          <div
+            class="relative aspect-square w-full overflow-hidden bg-neutral/10 [container-type:size]"
+          >
             <img
               src={image.src}
               alt={image.alt}
-              class="size-full object-cover"
               width={image.width}
               height={image.height}
+              class={[
+                "absolute object-cover",
+                image.rotation === 0
+                  ? "inset-0 size-full"
+                  : "top-1/2 left-1/2 h-[100cqw] w-[100cqh]",
+              ]}
+              style:transform={image.rotation === 0
+                ? undefined
+                : `translate(-50%, -50%) rotate(${image.rotation}deg)`}
               loading="lazy"
               decoding="async"
             >

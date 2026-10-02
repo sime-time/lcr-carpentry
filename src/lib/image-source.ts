@@ -9,7 +9,6 @@ export const heroImages = [
     category: "Stairs and railings",
     width: 4032,
     height: 3024,
-    rotation: 90,
   },
   {
     src: `${R2_URL}/ceilings/vaulted-truss-beams.webp`,
@@ -17,7 +16,6 @@ export const heroImages = [
     category: "Ceilings",
     width: 4032,
     height: 3024,
-    rotation: 90,
   },
   {
     src: `${R2_URL}/walls-and-trim/chevron-wall.webp`,
@@ -25,7 +23,6 @@ export const heroImages = [
     category: "Walls and trim",
     width: 4032,
     height: 3024,
-    rotation: 0,
   },
   {
     src: `${R2_URL}/built-ins-and-cabinets/gray-kitchen.webp`,
@@ -33,7 +30,6 @@ export const heroImages = [
     category: "Built-ins and cabinets",
     width: 4032,
     height: 3024,
-    rotation: 90,
   },
 ];
 
@@ -42,18 +38,16 @@ export const aboutImage = {
   alt: "Custom floor-to-ceiling built-in bookcase",
   width: 4032,
   height: 3024,
-  rotation: 0,
 };
 
 export const ourWorkImages = [
   {
-    id: "built-ins-storage",
-    label: "Built-ins & Storage",
+    id: "built-ins-and-cabinets",
+    label: "Built-ins & Cabinets",
     src: `${R2_URL}/built-ins-and-cabinets/built-in-bookcase.webp`,
     alt: "Custom floor-to-ceiling built-in bookcase",
     width: 4032,
     height: 3024,
-    rotation: 0,
     href: "/gallery",
   },
   {
@@ -63,17 +57,15 @@ export const ourWorkImages = [
     alt: "Custom staircase with horizontal metal balusters",
     width: 4032,
     height: 3024,
-    rotation: 90,
     href: "/gallery",
   },
   {
-    id: "wall-paneling-molding",
-    label: "Wall Paneling & Molding",
+    id: "walls-and-trim",
+    label: "Walls & Trim",
     src: `${R2_URL}/walls-and-trim/chevron-wall.webp`,
     alt: "Custom chevron wall paneling",
     width: 4032,
     height: 3024,
-    rotation: 0,
     href: "/gallery",
   },
   {
@@ -83,7 +75,6 @@ export const ourWorkImages = [
     alt: "Custom fireplace mantel with built-in side shelves",
     width: 4032,
     height: 3024,
-    rotation: 90,
     href: "/gallery",
   },
 ];

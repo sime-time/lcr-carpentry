@@ -39,6 +39,8 @@
       <img
         src={image.src}
         alt={image.alt}
+        width={image.width}
+        height={image.height}
         class={[
           "absolute inset-0 size-full object-cover transition-opacity duration-1400 ease-in-out motion-reduce:transition-none",
           index === activeIndex ? "opacity-100" : "opacity-0",

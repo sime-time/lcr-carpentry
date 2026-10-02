@@ -1,33 +1,5 @@
 <script lang="ts">
-  import { PUBLIC_R2_URL } from "$env/static/public";
-
-  // Update each href here when the gallery supports category query parameters.
-  const categories = [
-    {
-      id: "built-ins-cabinetry",
-      label: "Built-ins & Cabinetry",
-      image: `${PUBLIC_R2_URL}/photos/built-ins-and-cabinetry/IMG_0990.JPG`,
-      href: "/gallery",
-    },
-    {
-      id: "staircases-railings",
-      label: "Staircases & Railings",
-      image: `${PUBLIC_R2_URL}/photos/staircases-and-railings/IMG_0792.JPG`,
-      href: "/gallery",
-    },
-    {
-      id: "walls-trim",
-      label: "Walls & Trim",
-      image: `${PUBLIC_R2_URL}/photos/walls-and-trim/IMG_1461.JPG`,
-      href: "/gallery",
-    },
-    {
-      id: "mudrooms-entryways",
-      label: "Mudrooms & Entryways",
-      image: `${PUBLIC_R2_URL}/photos/mudrooms-and-benches/IMG_0988.JPG`,
-      href: "/gallery",
-    },
-  ];
+  import { ourWorkImages } from "$lib/image-source";
 </script>
 
 <section
@@ -46,15 +18,15 @@
     <ul
       class="grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-14 lg:grid-cols-4"
     >
-      {#each categories as category (category.id)}
+      {#each ourWorkImages as image (image.id)}
         <li class="flex min-w-0 flex-col items-start">
           <div class="aspect-square w-full overflow-hidden bg-neutral/10">
             <img
-              src={category.image}
-              alt={category.label}
+              src={image.src}
+              alt={image.alt}
               class="size-full object-cover"
-              width="600"
-              height="600"
+              width={image.width}
+              height={image.height}
               loading="lazy"
               decoding="async"
             >
@@ -63,13 +35,13 @@
           <h3
             class="mt-6 mb-6 font-sans text-sm leading-6 font-normal tracking-[0.16em] uppercase sm:min-h-12 lg:mt-8 lg:mb-8"
           >
-            {category.label}
+            {image.label}
           </h3>
 
           <a
-            href={category.href}
+            href={image.href}
             class="btn btn-neutral btn-outline mt-auto min-h-12 px-6 tracking-[0.2em] uppercase motion-reduce:transition-none"
-            aria-label={`View work: ${category.label}`}
+            aria-label={`View work: ${image.label}`}
           >
             View Work
           </a>

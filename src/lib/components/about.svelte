@@ -1,8 +1,6 @@
 <script lang="ts">
   import Icon from "@iconify/svelte";
-  import { PUBLIC_R2_URL } from "$env/static/public";
-
-  const image = `${PUBLIC_R2_URL}/photos/fireplaces/IMG_0930.JPG`;
+  import { aboutImage } from "$lib/image-source";
 </script>
 
 <section
@@ -17,11 +15,11 @@
       class="hidden sm:block aspect-square w-full overflow-hidden border-4 border-primary bg-neutral-content/10 rounded"
     >
       <img
-        src={image}
-        alt="fireplace"
+        src={aboutImage.src}
+        alt={aboutImage.alt}
         class="size-full object-cover"
-        width="800"
-        height="800"
+        width={aboutImage.width}
+        height={aboutImage.height}
         loading="lazy"
         decoding="async"
       >

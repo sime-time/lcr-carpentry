@@ -60,4 +60,9 @@
     font-family: var(--font-display);
     font-weight: 400;
   }
+
+  html,
+  body {
+    background: #303030;
+  }
 }

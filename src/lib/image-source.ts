@@ -105,8 +105,8 @@ export const ourWorkImages = [
   {
     id: "ceilings",
     label: "Ceilings",
-    src: `${R2_URL}/ceilings/geometric-wood-ceiling-beams.webp`,
-    alt: "Custom geometric ceiling with wood beams",
+    src: `${R2_URL}/ceilings/vaulted-wood-beam-ceiling.webp`,
+    alt: "Vaulted ceiling with wood beams",
     width: 3024,
     height: 4032,
     href: "/gallery?category=ceilings",

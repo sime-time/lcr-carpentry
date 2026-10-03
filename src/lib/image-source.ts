@@ -51,14 +51,14 @@ function createGalleryCategory(
 
 export const heroImages = [
   {
-    src: `${R2_URL}/stairs-and-railings/railings-polished.webp`,
-    alt: "Custom railings with polished floor",
+    src: `${R2_URL}/stairs-and-railings/IMG_0963.webp`,
+    alt: "Custom spiral staircase",
     width: 3024,
     height: 4032,
   },
   {
-    src: `${R2_URL}/stairs-and-railings/IMG_0963.webp`,
-    alt: "Custom spiral staircase",
+    src: `${R2_URL}/stairs-and-railings/railings-polished.webp`,
+    alt: "Custom railings with polished floor",
     width: 3024,
     height: 4032,
   },

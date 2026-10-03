@@ -62,7 +62,7 @@
         </svelte:element>
       </div>
       <p
-        class="max-w-md text-base leading-relaxed font-light text-base-content/80 lg:pb-2"
+        class="max-w-md text-base leading-relaxed  text-base-content/80 lg:pb-2"
       >
         A built-in you've been imagining. A staircase ready for a new look.
         Whatever you're planning, it starts with a conversation.
@@ -89,7 +89,7 @@
             >
               {option.title}
             </svelte:element>
-            <p class="text-sm leading-relaxed font-light text-base-content/80">
+            <p class="text-sm leading-relaxed  text-base-content/80">
               {option.description}
             </p>
             <div class="card-actions mt-3 w-full">

@@ -36,7 +36,7 @@
         Quality carpentry.<br><span class="text-primary">Built to last.</span>
       </h2>
       <div
-        class="mt-6 space-y-5 leading-relaxed font-light text-neutral-content/80 text-base"
+        class="mt-6 space-y-5 leading-relaxed text-neutral-content/80 text-base"
       >
         <p>
           Founded by Leo Cisneros in 2014, LCR Carpentry is a family-owned

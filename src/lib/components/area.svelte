@@ -20,7 +20,7 @@
         Proudly serving your neighborhood.
       </h2>
       <div
-        class="mt-6 space-y-5 leading-relaxed font-light text-neutral-content/80 text-base"
+        class="mt-6 space-y-5 leading-relaxed text-neutral-content/80 text-base"
       >
         <p>
           LCR Carpentry proudly serves homeowners throughout Westfield, Carmel,

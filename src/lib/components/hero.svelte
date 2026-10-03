@@ -81,7 +81,7 @@
       </h1>
 
       <p
-        class="mt-5 max-w-sm text-base leading-relaxed font-light text-neutral-content/90"
+        class="mt-5 max-w-sm text-base leading-relaxed text-neutral-content/90"
       >
         Custom built-ins, staircases, and finish carpentry for homeowners who
         notice the details.

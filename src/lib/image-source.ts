@@ -238,7 +238,7 @@ export const wallsAndTrim = createGalleryCategory(
   "Walls & Trim",
   [
     "chevron-accent-wall.webp",
-    "IMG_0973.webp .webp",
+    "IMG_0973.webp",
     ["IMG_1020.webp", 4032, 3024],
     ["IMG_1429.webp", 4032, 3024],
     "IMG_3783.webp",

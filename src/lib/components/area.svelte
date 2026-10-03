@@ -46,7 +46,7 @@
     </div>
 
     <div
-      class="overflow-hidden rounded-lg aspect-4/3 w-full border border-white/10"
+      class="overflow-hidden rounded-lg aspect-4/3 w-full border-3 border-secondary"
     >
       <iframe
         src="https://www.google.com/maps?q=Hamilton+County,Indiana&output=embed"

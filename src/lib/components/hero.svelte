@@ -113,11 +113,11 @@
         <div class="flex items-center gap-1 sm:gap-2">
           <fieldset class="flex min-w-0 items-center">
             <legend class="sr-only">Choose a project photo</legend>
-            {#each heroImages as image, index}
+            {#each heroImages as _, index}
               <button
                 type="button"
                 class="btn btn-circle btn-ghost border-0 text-neutral-content hover:bg-neutral-content/10 focus-visible:outline-secondary motion-reduce:transition-none sm:size-11"
-                aria-label={`Show photo ${index + 1}: ${image.category}`}
+                aria-label={`Show carpentry photo ${index + 1}`}
                 aria-pressed={index === activeIndex}
                 aria-controls="hero-photography"
                 onclick={() => selectImage(index)}

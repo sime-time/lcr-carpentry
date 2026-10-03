@@ -12,7 +12,7 @@
     class="mx-auto grid w-full max-w-7xl items-center gap-10 px-6 sm:px-10 md:grid-cols-2 lg:gap-20 lg:px-16"
   >
     <div
-      class="hidden sm:block aspect-square w-full overflow-hidden border-4 border-primary bg-neutral-content/10 rounded"
+      class="hidden sm:block aspect-square w-full overflow-hidden bg-neutral-content/10 rounded"
     >
       <img
         src={aboutImage.src}
